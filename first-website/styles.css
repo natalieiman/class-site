@@ -1,0 +1,28 @@
+body {
+background-color: PeachPuff;
+margin: 0
+}
+
+p {
+  color: rgb(100, 30, 90);
+  background: olivedrab;
+  border:6px solid rgb(100, 30, 90);
+  padding: 40px;
+  padding-left: 10px;
+  margin: 50px;
+}
+
+h1 {
+  color: olivedrab;
+  font-size: 90px;
+  margin-top: 0;
+}
+
+img  {
+  max-width: 50%;
+}
+
+.special {
+  background: lightpink;
+  font-size: 30px;
+}
