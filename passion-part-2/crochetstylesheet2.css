@@ -1,0 +1,57 @@
+body {
+  background-color: #ccb3ff;
+}
+
+a {
+  color:#ccb3ff;
+  background-color:lightgreen;
+}
+
+h1 {
+  font-family: "Light 300 italic", Nunito, sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 5px 5px 3px lightgreen;
+}
+
+h2 {
+  font-family: "Light 300 italic", Nunito, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+/*h3 {
+  font- lightgreen;
+  font-family: "Light 300 italic", Nunito, sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 5px 5px 3px black;
+}*/
+
+p {
+  font-family: "Extra-light 200", Nunito, sans-serif;
+  text-align: center;
+  padding:10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: solid;
+  border-width: 5px;
+  border-color: lightgreen;
+  background-color: #ff4a4a;
+}
+
+ul {
+  font-family: "Light 300 italic", Nunito,sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  padding:20px;
+  margin-left: 650px;
+  margin-right: 610px;
+  list-style-position: inside;
+  border:solid;
+  border-width: 5px;
+  border-color: lightgreen;
+  background-color: #ff4a4a;
+}

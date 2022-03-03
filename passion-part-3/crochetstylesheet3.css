@@ -1,0 +1,40 @@
+body {
+  background-color: #ebd2b0;
+}
+
+a {
+  color: #c99e65;
+}
+
+h1 {
+  font-family: "Annonce Regular", Annonce, sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Annonce Regular", Annonce, sans-serif;
+  text-align: left;
+  font-size: 60px;
+  color: white;
+}
+
+p {
+  font-family: "Light 300", Nunito, sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  font-family: "Annonce Regular", Annonce, sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: left;
+}

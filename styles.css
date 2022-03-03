@@ -1,3 +1,47 @@
 body {
-  background-color: lightpink;
+
+}
+
+.background {
+  background-image: radial-gradient(green, green, purple, black);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+a {
+  color: limegreen;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Nunito Black Italic, Nunito, sans-serif;
+  font-style: italic;
+  font-size: 70px;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-family: Nunito Regular, Nunito, sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+
+ol {
+  font-family: Nunito Regular, Nunito, sans-serif;
+  font-size: 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  color: white;
 }
