@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.img1 {
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  max-width:600px;
+}
+
+.img2 {
+  display: none;
+  margin: auto;
+  padding-top: 30px;
+  max-width:600px;
+}
+
+.img3 {
+  display: none;
+  margin: auto;
+  padding-top: 30px;
+  max-width:600px;
+}
+
+@media screen and (max-width:1000px) {
+  /* TABLET? */
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width:500px) {
+  /* PHONE */
+  .img2 {
+    display: none;
+  }
+
+  .img3 {
+    display: block;
+  }
+  }

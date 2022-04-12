@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(46, 47, 115);
+  background-image: linear-gradient(black, rgb(46, 47, 115), rgb(231, 125, 0), rgb(124, 153, 242), black);
+  margin: 0;
+}
+
+/* rgb(191, 3, 3) */
+
+.main-container {
+  width: 100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sky {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-five {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: white;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid white;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg) scale(.5);
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    .star-five:before {
+      border-bottom: 80px solid white;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    .star-five:after {
+      position: absolute;
+      display: block;
+      color: white;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid white;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+
+    .star-two {
+      left: auto;
+      right: 50px;
+    }
+
+
+.flame {
+  width:150px;
+	height:150px;
+	background:linear-gradient(-45deg, red, orange);
+	border-radius: 150px 150px 0px 150px;
+	transform:rotate(-135deg);
+	animation:.1s flame infinite;
+	filter:blur(10px);
+	position:relative;
+	box-shadow:17px 20px 90px #700;
+	border:45px solid orange;
+	border-left-width:25px;
+	border-top-width:25px;
+
+	&:after,
+	&:before{
+		content:'';
+		width:100px;
+		height:100px;
+		display:block;
+		position:absolute;
+		background:linear-gradient(-45deg, red, orange);
+		animation:.2s flame infinite;
+		transform:scale(.8) rotate(20deg);
+		border-radius: 100px 100px 0px 100px;
+		top:20px;
+	}
+	&:before{
+		top:0;
+		animation-duration:.09s;
+		transform:scale(.9) rotate(-15deg) translate(10px, 0px);
+	}
+}
+
+@keyframes flame{
+  0% {height:150px; width:150px;}
+  50% {height:140px; width:140px;}
+  100% {height:150px; width:150px;}
+}
+
+.ground {
+  background: linear-gradient(rgb(124, 153, 242), olivedrab);
+  height: 200px;
+  width: 100vw;
+  border-radius: 50% 50% 0 0;
+  align-self: flex-end;
+  overflow: hidden;
+
+}
+
+/* rgb(36, 61, 194) */

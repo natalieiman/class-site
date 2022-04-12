@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: red;
+  color:white;
+  border-radius: 50%;
+  border: none;
+  cursor:cell;
+  padding:20px;
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.sidebar {
+  background-color: green;
+  color:white;
+  position: fixed;
+  top:0;
+  right: -100px;
+  height:300px;
+  width:100px;
+  padding:20px;
+  transition: right .5s ease-in-out;
+}
+.active {
+  right:0;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-color: green;
+  border-width: thick;
+  color: white;
+  font-size: 30px;
+}
