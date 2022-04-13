@@ -1,9 +1,37 @@
 body {
-  background-color: lightblue;
+  background-image: linear-gradient(lightblue, pink, orange);
+}
+
+.sky {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.cloud {
+  width: 30%;
+  position: absolute;
+  animation: cloudmotion 10s infinite;
+  top:50px;
+  left:-40%;
+}
+
+.c2 {
+  animation: cloudmotion 20s 5s infinite;
+  top: 30%;
+}
+
+@keyframes cloudmotion {
+  0% {
+    left:-40%;
+  }
+  100% {
+    left:110vw;
+  }
 }
 
 .ground {
-  background-color: rgb(0, 125, 35);
+  background-image: linear-gradient(rgb(52, 168, 45), rgb(0, 107, 20));
   position: fixed;
   bottom: 0;
   left: 0;
@@ -12,7 +40,7 @@ body {
 }
 
 .stem {
-  background-color: rgb(12, 75, 11);
+  background-color: rgb(3, 91, 1);
   position: fixed;
   bottom: 0;
   height:500px;
@@ -21,19 +49,27 @@ body {
   transform:translateX(-50%);
 }
 
+.leaf {
+  background-color: green;
+  position:absolute;
+  width:50%;
+  height:30px;
+  border-radius: 50%;
+}
+
 .flower{
   /* background-color: yellow; */
   width:200px;
   height:200px;
-  left:50%;
-  bottom:400px;
-  position:fixed;
-  transform:translateX(-50%);
+  left:-90px;
+  top:-100px;
+  position:absolute;
+  /* transform:translateX(-50%); */
   border-radius: 50%;
   animation: spin 5s infinite linear;
 }
 
-@@keyframes spin {
+@keyframes spin {
   0% {
     transform:rotate(0deg);
   }
@@ -43,7 +79,8 @@ body {
 }
 
 .petal {
-  background-color: orange;
+  /* background-color: orange; */
+  background-image: linear-gradient(orange,rgb(255, 208, 6),orange);
   position:absolute;
   width:50%;
   height:30px;
@@ -78,4 +115,15 @@ body {
 
 .p7 {
   transform: rotate(180deg);
+}
+
+.center {
+  background-image: radial-gradient(rgb(255, 252, 177), rgb(255, 221, 40));
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
