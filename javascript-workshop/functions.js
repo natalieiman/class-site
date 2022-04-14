@@ -1,5 +1,5 @@
 function toggle() {
-  var element = document.getElementById("box");
+  var element = document.getElementById("marquee-main");
   element.classList.toggle("active");
 }
 
@@ -10,7 +10,7 @@ function toggle() {
 */
 $('.marquee').marquee({
 	//duration in milliseconds of the marquee
-	duration: 12000,
+	duration: 5000,
 	//gap in pixels between the tickers
 	gap: 300,
 	//time in milliseconds before the marquee will start animating
@@ -18,8 +18,7 @@ $('.marquee').marquee({
 	//'left' or 'right'
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
-	duplicated: true,
-  startVisible: true
+	duplicated: true
 });
 
 $( function() {
