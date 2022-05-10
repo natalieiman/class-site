@@ -1,12 +1,48 @@
 <doctype html>
   <html>
   <head>
-    <title></title>
+    <title>clean me!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
   </head>
 
   <body>
+    <img src="room.png" class="background">
+    <img src="clothes.png" class="draggable clothes" style="width:500px;">
+    <img src="books.png" class="draggable books" style="width:250px;">
+
+    <!-- DRESSER -->
+    <div class="dresser dresser-drop">
+      <img src="dresser1.png" style="width:630px;">
+    </div>
+
+    <div class="dresser clean-dresser hide">
+      <img src="dresser2.png" style="width:10px;">
+    </div>
+
+    <!-- SHELF -->
+    <div class="shelf shelf-drop"></div>
+
+    <div class="shelf clean-shelf hide">
+      <img src="shelf2.png" style="width:580px;">
+    </div>
+
+    <!-- <div class="droppable bed">
+      image goes here
+    </div> -->
+
+    <!-- BED -->
+    <div class="bed " onclick="cleanBed()"><img class="messy-bed" src="messybed.png"></div>
+    <div class="bed clean-bed hide"></div>
+
+    <!-- DOOR -->
+    <div class="door" onclick="closedDoor()"><img class="open-door" src="dooropen.png"></div>
+    <div class="door closed-door hide"><img class="closed-door" src="gn.png"></div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="functions.js"></script>
+
   </body>
 
   </html>

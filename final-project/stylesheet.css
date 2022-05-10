@@ -1,0 +1,77 @@
+.background {
+  width:100vw;
+}
+
+.draggable {
+  position:absolute;
+  z-index: 9;
+  cursor: cell;
+}
+
+
+.clothes {
+  top: 550px;
+  left: 750px;
+}
+
+.books {
+  top: 450px;
+  left:850px;
+}
+
+.dresser {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top:155px;
+  left:25px;
+}
+
+.clean-dresser {
+  top:125px;
+  left:20px;
+}
+
+.shelf {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom:350px;
+  right:100px;
+}
+
+.clean-shelf {
+  top:95px;
+  right:160px;
+}
+
+.bed {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top:330px;
+  left:300px;
+  cursor: cell;
+}
+
+.messy-bed {
+  width:630px;
+}
+
+
+.open-door {
+  width:450px;
+  position: absolute;
+  top:60px;
+  right:360px;
+  cursor: cell;
+}
+
+.closed-door {
+  position: absolute;
+  width: 100vw;
+}
+
+.hide {
+  display: none;
+}
